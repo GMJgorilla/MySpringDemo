@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  * @QQ: 904878659
  */
 
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE) // 作用在类上
+@Retention(RetentionPolicy.RUNTIME) // 运行时获取
 public @interface MyComponent {
 }

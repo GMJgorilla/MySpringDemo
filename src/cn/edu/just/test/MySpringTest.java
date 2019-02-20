@@ -1,6 +1,7 @@
 package cn.edu.just.test;
 
 import cn.edu.just.spring.MyApplicationContext;
+import cn.edu.just.springMVC.controller.UserController;
 
 /**
  * @Author: Gorilla
@@ -22,5 +23,11 @@ public class MySpringTest {
         Object obj = context.getBean("userController");
 
         System.out.println(obj);
+
+        UserController userController = (UserController) obj;
+        System.out.println(userController.getUserService());
+
+        Object userServiceImpl = context.getBean("userServiceImpl");
+        System.out.println(userServiceImpl);
     }
 }

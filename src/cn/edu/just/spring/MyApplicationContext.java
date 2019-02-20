@@ -9,7 +9,7 @@ import java.util.HashMap;
  */
 public class MyApplicationContext {
 
-    private HashMap container = new HashMap<String, Object>();
+    private HashMap<String, Object> container = new HashMap<>();
 
     /**
      *

@@ -1,6 +1,8 @@
 package cn.edu.just.springMVC.controller;
 
 import cn.edu.just.spring.MyComponent;
+import cn.edu.just.spring.MyResource;
+import cn.edu.just.springMVC.service.UserService;
 
 /**
  * @Author: Gorilla
@@ -10,4 +12,11 @@ import cn.edu.just.spring.MyComponent;
 
 @MyComponent
 public class UserController {
+
+    @MyResource("userServiceImpl")
+    private UserService userService;
+
+    public UserService getUserService() {
+        return userService;
+    }
 }
